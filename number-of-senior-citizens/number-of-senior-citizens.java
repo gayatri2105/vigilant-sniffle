@@ -1,9 +1,9 @@
 class Solution {
     public int countSeniors(String[] details) {
         int count=0;
-        for(String s:details)
+        for(int i=0;i<details.length;i++)
         {
-            if(Integer.parseInt(s.substring(11,13))>60)
+            if(Integer.parseInt(details[i].substring(11,13))>60)
             count+=1;
 
         }
